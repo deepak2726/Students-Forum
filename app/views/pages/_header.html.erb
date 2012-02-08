@@ -1,0 +1,42 @@
+<div id="header">
+			<div id="header_inner">
+				<h3 style="margin-top:3px">
+					<%=link_to image_tag("logo123.png", :border => 0,:height=>55), root_url%>
+					</h3>
+				<ul id="mainNav" class="tabs">
+					<li class="<%= controller.class == PagesController and controller.action_name == 'index' ? 'current_home' : '' %>">
+						<%= link_to root_url,:class=>"home" ,:title=>"Home" do %>
+						<span>Home</span>
+						<%end%>                       
+					</li>
+
+                                        <li class="<%= controller.class == PagesController and controller.action_name == 'about_us' ? 'current_home' : '' %>">
+						<%= link_to about_us_url,:title=>"Services" do %>
+						<span>About Us</span>
+						<%end%>
+					</li>
+
+					<li class="<%= controller.class == PagesController and controller.action_name == 'services' ? 'current_home' : '' %>">
+						<%= link_to services_url,:title=>"Services" do %>
+						<span>Services</span>
+						<%end%>
+					</li>
+
+					<li class="<%= controller.class == PagesController and controller.action_name == 'blog' ? 'current_home' : '' %>">
+						<%= link_to "",:title=>"Blog" do %>
+						<span>Blog</span>
+						<%end%>
+					</li>
+
+					<li class="<%= controller.class == PagesController and controller.action_name == 'contact_us' ? 'current_home' : '' %>">
+						<%= link_to contact_us_url,:title=>"Contact" do %>
+						<span>Contact Us</span>
+						<%end%>
+					</li>
+
+					<li class="top_space2">
+						&nbsp; <img src="images/phone.png" />
+					</li>
+				</ul>
+			</div>
+		</div>

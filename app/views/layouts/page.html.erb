@@ -1,0 +1,32 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr">
+  <head>
+    <title>Students'Forum</title>
+<%# stylesheet_link_tag :all %>
+<%# csrf_meta_tag %>
+    <link href="stylesheets/style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="javascripts/jquery.js"></script>
+    <script type="text/javascript" src="javascripts/magik.js"></script>
+    <script type="text/javascript" src="javascripts/custom.js"></script>
+    <link href="stylesheets/slider.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <%=render(:partial=>'header')%>
+    <%=render(:partial=>'title',:locals => {:title => @title})%>
+    <div id="container">
+      <div id="mainContent" class="clearfix">
+        <%=render(:partial=>'lhs_col',:locals => {:title => @title} )%>
+        <div class="RHS_box">
+        <%= yield %>
+        </div>
+      </div>
+      </br>
+    </div>
+    <%=render(:partial=>'footer')%>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+<div id="contact_us">
+
+  <h2>Contact US</h2>
+  <div>
+			To get a demo of the sessions and events in your college ,simply fill out the following form.We will contact you within 24 hrs.For any questions call +91 758-808-4080
+  </div>
+  <br>
+
+
+  <%= form_tag(thank_you_url,:method=>"post") do %>
+    <ul style="padding-top:5px">
+      <li class="label">
+                                  Name:
+      </li>
+
+      <li>
+        <span class="wrap1"> <input align="absbottom"  required="true" class="inputbox" id="email_name" name="visitor[name]" size="30" style="width:270px" title="Enter name" type="text" /> </span>
+      </li>
+    </ul>
+    <ul>
+      <li class="label">
+                                  College:
+      </li>
+
+      <li>
+        <span class="wrap1"> <input align="absbottom" class="inputbox" id="visitor_company" name="visitor[college]" size="30" style="width:270px" title="Enter company name" type="text" /> </span>
+      </li>
+    </ul>
+    <ul>
+      <li class="label">
+                                  Email address:
+      </li>
+
+      <li>
+        <span class="wrap1"> <input align="absbottom" required="true" class="inputbox" id="email_email" name="visitor[email]" size="30" style="width:270px" title="Enter email address" type="email" /> </span>
+      </li>
+    </ul>
+    <ul>
+      <li class="label">
+                                  Phone number:
+      </li>
+
+      <li>
+        <span class="wrap1"> <input align="absbottom" class="inputbox" id="email_phone" name="visitor[phone]" size="30" style="width:270px" title="Enter Phone Number" type="text" /> </span>
+      </li>
+    </ul>
+
+
+    <ul>
+      <li class="label">
+                                  Comment:
+      </li>
+
+      <li>
+        <span class="wrap2" style="width:450px;"> 					<textarea name="visitor[comment]"  id="email_question" class="txt_area" title="Write us a note about your requirement" style = "width:440px"></textarea> </span>
+      </li>
+    </ul>
+
+    <ul style="padding-top:5px;">
+      <li class="label">
+        &nbsp;
+      </li>
+      <li style="">
+        <input align="absmiddle" border="0"  type="image" src="images/submit_button.png" />
+      </li>
+    </ul>
+
+  <%end%>
+</div>
+
