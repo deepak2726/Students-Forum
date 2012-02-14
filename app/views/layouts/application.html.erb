@@ -6,14 +6,13 @@
 <%# csrf_meta_tag %>
     <link href="stylesheets/style.css" rel="stylesheet" type="text/css"/>
     <link href="stylesheets/slider.css" rel="stylesheet" type="text/css"/>
-    <script type="text/javascript" src="javascripts/jquery.js"></script>
-    <script type="text/javascript" src="javascripts/magik.js"></script>
-    <script type="text/javascript" src="javascripts/custom.js"></script>
-   
   </head>
   <body id="home" class="b">
     <%=render(:partial=>'header')%>
     <%= yield %>
     <%=render(:partial=>'footer')%>
   </body>
+    <script type="text/javascript" src="javascripts/jquery.js"></script>
+    <script type="text/javascript" src="javascripts/magik.js"></script>
+    <script type="text/javascript" src="javascripts/custom.js"></script>
 </html>
