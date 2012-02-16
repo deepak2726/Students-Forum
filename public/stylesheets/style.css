@@ -3587,7 +3587,7 @@ position:relative;
 width:290px;
 }
 
-.big_font{font-size:18px; font-weight:bold; padding-top:10px; padding-bottom:10px; border-bottom:1px #eaeaea solid}
+.big_font{font-size:18px; font-weight:bold; padding-top:10px; padding-bottom:0px; border-bottom:1px #eaeaea solid}
 .big_font img{padding-right:5px}
 
 #testimonial_list .quote_img{vertical-align:bottom}
